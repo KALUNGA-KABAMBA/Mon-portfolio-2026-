@@ -226,3 +226,208 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
+
+/* --- Styles pour la page Contact --- */
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 6rem auto;
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info h2 {
+    text-align: left;
+}
+
+.contact-info h2::after {
+    margin: 1.2rem 0; /* Aligne la barre sous le titre à gauche */
+}
+
+.info-details {
+    margin-top: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--gris-tres-fonce);
+}
+
+.info-item i {
+    color: var(--violet-doux);
+    font-size: 1.4rem;
+    width: 25px;
+}
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--gris-tres-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--violet-doux);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-foncé);
+    transform: translateY(-2px);
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+    
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+
+/* --- Page Projets Complète --- */
+
+.liste-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.liste-projets h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.liste-projets div {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--gris-clair);
+    transition: transform 0.3s ease;
+}
+
+.liste-projets div:hover {
+    transform: translateY(-10px);
+}
+
+.liste-projets div img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+}
+
+.liste-projets div h3 {
+    color: var(--violet-doux);
+    margin-bottom: 0.8rem;
+}
+
+.liste-projets div p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Badges technos au milieu de la carte */
+.liste-projets div > span {
+    display: inline-block;
+    background-color: var(--gris-clair);
+    color: var(--violet-doux);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-bottom: 1.5rem;
+}
+
+/* Partie basse avec la ligne et les codes en noir */
+.liste-projets div p:last-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0,5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gris-clair);
+}
+
+.liste-projets div p:last-child a {
+    color: var(--gris-tres-fonce);
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.3s;
+}
+
+.liste-projets div p:last-child a:hover {
+    color: var(--violet-doux);
+    transform: scale(1.2);
+}
+
+.liste-projets div p:last-child span {
+    color: var(--gris-tres-fonce);
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
