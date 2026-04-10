@@ -431,3 +431,183 @@ footer a:hover {
     padding: 0;
     margin: 0;
 }
+
+/* --- Styles spécifiques à la page Passions --- */
+
+.passions-section h1 {
+    text-align: center;
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.passions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto 6rem auto;
+    padding: 0 2rem;
+}
+
+.passion-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--gris-clair);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+}
+
+.passion-icon {
+    background-color: var(--gris-tres-clair);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem auto;
+    color: var(--violet-doux);
+    font-size: 1.5rem;
+}
+
+.passion-card h3 {
+    color: var(--violet-doux);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    /* Barre de soulignement demandée */
+    text-decoration: underline;
+    text-decoration-color: var(--orange-vif); /* Utilisation de ton orange pour le contraste */
+    text-underline-offset: 8px;
+}
+
+.passion-card p {
+    color: var(--gris-fonce);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Ajustement pour s'assurer que le titre H1 hors de la section est bien placé */
+main > h1 {
+    text-align: center;
+    color: var(--violet-doux);
+    margin-top: 3rem;
+}
+
+/* --- Soulignement personnalisé pour les titres spécifiques --- */
+
+/* Titre "Mes Projets" */
+.liste-projets h1 {
+    text-align: left; 
+    position: relative;
+    padding-bottom: 5px;
+    display: inline-block; 
+}
+
+.liste-projets h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    border-radius: 2px;
+    margin-top: 5px;
+    /* Aligné à gauche par défaut */
+}
+
+/* Titre "Mes Passions" */
+main > h1 {
+    text-align: left;
+    margin-left: 2rem; 
+    position: relative;
+    padding-bottom: 15px;
+    display: block;
+}
+
+main > h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.titre-divertissement {
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    position: relative;
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+}
+
+.titre-divertissement::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.divertissement-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 4rem auto 6rem auto;
+    padding: 0 2rem;
+}
+
+.divertissement-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.divertissement-card:hover {
+    transform: translateY(-10px);
+}
+
+.divertissement-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.divertissement-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.divertissement-content i {
+    font-size: 2rem;
+    color: var(--violet-doux);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.divertissement-content h3 {
+    color: var(--violet-doux);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: var(--orange-vif);
+    text-underline-offset: 6px;
+}
+
+.divertissement-content p {
+    color: var(--gris-fonce);
+    line-height: 1.7;
+    font-size: 1rem;
+}
